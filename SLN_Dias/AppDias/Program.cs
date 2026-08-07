@@ -23,7 +23,7 @@ class Program
         while (dataFim < dataInicio)
         {
             Console.WriteLine("\n⚠️ Ops! A data de término não pode ser anterior à data de início.");
-            dataFim = LerDataValida("Digite novamente a data de término (dd/mm/aaaa): ");
+            LerDataValida("Digite novamente a data de término (dd/mm/aaaa): ");
         }
 
         Tarefa tarefa = new Tarefa(nome, funcionario, dataInicio, dataFim);
